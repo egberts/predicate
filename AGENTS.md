@@ -1,0 +1,71 @@
+# Project Agent Configuration
+
+## Predicate System
+
+This project **is** [predicate](https://github.com/egberts/predicate) — a system for portable, composable agent configuration.
+
+> [!IMPORTANT]
+> You **must** review [PREDICATE.md](PREDICATE.md) and follow its protocol before beginning work.
+
+**Active Personas:** None
+
+This is a documentation-only repository. The language-specific personas (go.md, rust.md, etc.) are provided as templates for other projects, but are not active here. The `integral.md` axiom guides meta-project reasoning.
+
+> [!NOTE]
+> This repository **is** the Predicate source. The `axioms/`, `personas/`, and `workflows/` directories live at the repo root — not under `.agent/` — because this is the upstream that other projects consume via submodule or symlink. When mounted into a consuming project, these directories appear under `.agent/` as described in `PREDICATE.md`.
+
+---
+
+## Project Overview
+
+Predicate is a framework for configuring AI coding agents with reusable rulesets (axioms), composable extensions (personas), and task-specific procedures (workflows).
+
+**Purpose:** Replace ad-hoc system prompts with version-controlled, shareable agent configuration.
+
+---
+
+## Repository Structure
+
+| Directory    | Purpose                             |
+| :----------- | :---------------------------------- |
+| `axioms/`    | Foundational rulesets (axioms)      |
+| `personas/`  | Context-specific extensions         |
+| `workflows/` | Manually-triggered SOPs             |
+| `templates/` | Project templates (AGENTS.md)       |
+| `docs/`      | Guides, plans, and ADRs, formalisms |
+
+---
+
+## Build & Commands
+
+This is a documentation-only repository. No build required.
+
+- Validate markdown: `markdownlint .` (if installed)
+- Check links: `markdown-link-check *.md` (if installed)
+
+---
+
+## Code Style
+
+- **Markdown:** Follow GitHub Flavored Markdown
+- **Tables:** Align columns for readability
+- **Lists:** Use `-` for unordered lists
+- **Headers:** Use `##` sections with `---` separators
+
+---
+
+## Contributing
+
+See [README.md](README.md#contributing) for contribution guidelines.
+
+When adding content:
+
+- New axioms → `axioms/`
+- New personas → `personas/`
+- New workflows → `workflows/` with proper front-matter
+
+---
+
+## Version
+
+Pre-1.0: Breaking changes expected. Design over stability.
