@@ -13,7 +13,7 @@ predicate/
 ├── workflows/   # Manually-triggered SOPs
 ├── templates/   # Project templates (AGENTS.md, PLAN.md, etc.)
 └── docs/        # Guides, plans, ADRs, and formal models
-
+```
 ---
 
 ## Root Directories
